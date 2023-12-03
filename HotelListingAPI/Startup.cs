@@ -1,3 +1,4 @@
+using HotelListingAPI.Configurations;
 using HotelListingAPI.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -43,7 +44,7 @@ namespace HotelListingAPI
             });
 
 
-
+            services.AddAutoMapper(typeof(MapperInitializer));  
 
 
 
